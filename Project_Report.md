@@ -45,6 +45,55 @@ For the column 'Citizen Voting-Age Population' we have 56.67 % of values equal t
 zero. With this large percentage of missing values we decide to drop the column/variable 
 as we do not believe that it adds much value to our dataset.
 
+#### Task 5 : Create a new variable named “Party” that labels each county as Democratic or Republican. This new variable should be equal to 1 if there were more votes cast for the Democratic party than the Republican party in that county and it should be equal to 0 otherwise.
+
+Given below is the new column created ("Party") by comparing the democratic and republican votes.
+
+![](images/party_columns.png)
+
+There is an important observation here to note that there are no counties where the number of democratic and republican votes are the same. (This was tested by simply checking all counties where number of democratic votes was same as republican)
+
+count = merged_data[merged_data['Democratic Votes'] == merged_data['Republican Votes']]['County'].count()
+print ("Count: ", count)
+
+Count : 0
+
+#### Task 6 : Compute the mean median household income for Democratic counties and Republican counties. Which one is higher? Perform a hypothesis test to determine whether this difference is statistically significant at the 𝜶 = 𝟎. 𝟎𝟓 significance level. What is the result of the test? What conclusion do you make from this result?
+
+The computed means for Median Household Income for Democratic and Republican counties are given below:
+Mean Median Household Income for Democratic counties:  53798.732307692306
+Mean Median Household Income for Republican counties:  48724.15085714286
+
+We can see that the Democratic mean is higher than the Republican mean by 5074.581450549449. We performed a two-sample t-test to confirm if the mean difference is statistically significant.
+
+T-Test:
+
+Null Hypothesis : Democratic Mean = Republican Mean
+Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean < Republican Mean
+t_value : 5.507
+p_value : 4.462662928084171e-08   => Calculated for two-tailed test (2*(1-p_value))
+alpha : 0.05
+
+Since p_value < alpha, we can successfully reject our null hypothesis and claim that the difference in Mean Median Household Income is statistically significant.
+
+#### Task 7 : Compute the mean population for Democratic counties and Republican counties. Which one is higher? Perform a hypothesis test to determine whether this difference is statistically significant at the 𝜶 = 𝟎. 𝟎𝟓 significance level. What is the result of the test? What conclusion do you make from this result?
+
+The computed means for Population for Democratic and Republican counties are given below:
+Mean Total Population for Democratic counties:  300998.3169230769
+Mean Total Population for Republican counties:  53974.214857142855
+
+We can see that the Democratic mean is higher than the Republican mean by 247024.10206593407. We performed a two-sample t-test to confirm if the mean difference is statistically significant.
+
+T-Test:
+
+Null Hypothesis : Democratic Mean = Republican Mean
+Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean < Republican Mean
+t_value : 8.001
+p_value : 2.886579864025407e-15   => Calculated for two-tailed test (2*(1-p_value))
+alpha : 0.05
+
+Since p_value < alpha, we can successfully reject our null hypothesis and claim that the difference in Mean Population is statistically significant.
+
 #### 8. Compare Democratic counties and Republican counties in terms of age, gender, race and ethnicity, and education by computing descriptive statistics and creating plots to visualize the results. What conclusions do you make for each variable from the descriptive statistics and the plots?
 Blue - 1- Democratic
 Red - 0 - Republic
