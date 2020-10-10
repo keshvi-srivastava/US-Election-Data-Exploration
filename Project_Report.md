@@ -31,4 +31,28 @@ zero. With this large percentage of missing values we decide to drop the column/
 as we do not believe that it adds much value to our dataset/
 
 #### 8. Compare Democratic counties and Republican counties in terms of age, gender, race and ethnicity, and education by computing descriptive statistics and creating plots to visualize the results. What conclusions do you make for each variable from the descriptive statistics and the plots?
+Blue - 1- Democratic
+Red - 0 - Republic
+
 #### AGE
+![](images/Age1.png)  ![](images/Age2.png) ![](images/Age3.png)
+
+#### GENDER
+![](images/Gender1.png)  ![](images/Gender2.png)
+
+#### RACE
+![](images/Race1.png)  ![](images/Race2.png) ![](images/Race3.png)
+
+#### ETHNICITY
+![](images/Ethnicity1.png)  ![](images/Ethnicity2.png) 
+
+#### EDUCATION
+![](images/Education1.png)  ![](images/Education2.png) 
+
+#### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labeled as Democratic or Republican? Justify your answer.
+
+
+#### 10. Create a map of Democratic counties and Republican counties using the counties’ FIPS codes and Python’s Plotly library (plot.ly/python/county-choropleth/). Note that this dataset does not include all United States counties
+![](images/newplot.png) 
+
+
