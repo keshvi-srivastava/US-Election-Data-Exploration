@@ -35,21 +35,48 @@ Blue - 1- Democratic
 Red - 0 - Republic
 
 #### AGE
+Percent of people with age between 29 and 65 are more in number for voting. Lesser percentage of people of age 65 and older are noted.  
+Also we note that the age 65 and older people have voted more for Democratic
+
 ![](images/Age1.png)  ![](images/Age2.png) ![](images/Age3.png)
 
 #### GENDER
+The percentage of female and male voters are consistant,short boxes indicate that there is consistancy in the distribution of the data.
+There are outliers 1.5 times the interquartile range, lower quartile for female and upper quartile for male
+
 ![](images/Gender1.png)  ![](images/Gender2.png)
 
 #### RACE
+The percentage of white, not hispanic or Latino are majority of voters, also there is likely difference between the two party voters.
+
 ![](images/Race1.png)  ![](images/Race2.png) ![](images/Race3.png)
 
 #### ETHNICITY
+The percentage of foreign born have more voting for Republic where as the percentage of non foreign born have more vote for Democratic.
+
 ![](images/Ethnicity1.png)  ![](images/Ethnicity2.png) 
 
 #### EDUCATION
+There are less percentage of voters who have not taken high shool degree .This can also infer that the voters are educated with minimun of batchelors degree.
+
 ![](images/Education1.png)  ![](images/Education2.png) 
 
 #### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labeled as Democratic or Republican? Justify your answer.
+We reject the null hypothesis for <b>mean median household income</b> <br>
+There no is sufficient evidence to conclude that mean median household income of Democratic counties is higher or Republican counties.
+But there is sufficient evidence to conclue that mean median household income may not be equal for both the party. <br>
+
+We reject the null hypothesis <b>mean population</b> <br>
+There no is sufficient evidence to conclude that mean population of Democratic counties is higher or Republican counties.
+But there is sufficient evidence to conclue that mean population may not be equal for both the party. <br>
+
+Since, we do not have sufficient evidence from the testing, we can refer to the Age, Race, Ethnicity and education of the voters determine whether a county is labeled as Democratic or Republican. <br>
+<b>Justification</b>
+AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
+GENDER: There is no significant inference with the polulation classified as female as male <br>
+RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have there preference as Democratic<br>
+ETHNICITY: Here we can note that foreign born people have more than average voters for Democratic where compared to the non foreign born population <br>
+EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic
 
 
 #### 10. Create a map of Democratic counties and Republican counties using the counties’ FIPS codes and Python’s Plotly library (plot.ly/python/county-choropleth/). Note that this dataset does not include all United States counties
