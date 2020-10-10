@@ -87,11 +87,11 @@ But there is sufficient evidence to conclue that mean population may not be equa
 
 Since, we do not have sufficient evidence from the testing, we can refer to the Age, Race, Ethnicity and education of the voters determine whether a county is labeled as Democratic or Republican. <br>
 <b>Justification</b>
-AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
-GENDER: There is no significant inference with the polulation classified as female as male <br>
-RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have there preference as Democratic<br>
-ETHNICITY: Here we can note that foreign born people have more than average voters for Democratic where compared to the non foreign born population <br>
-EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic
+-AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
+-GENDER: There is no significant inference with the polulation classified as female as male <br>
+-RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have there preference as Democratic<br>
+-ETHNICITY: Here we can note that foreign born people have more than average voters for Democratic where compared to the non foreign born population <br>
+-EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic
 
 
 #### 10. Create a map of Democratic counties and Republican counties using the counties’ FIPS codes and Python’s Plotly library (plot.ly/python/county-choropleth/). Note that this dataset does not include all United States counties
