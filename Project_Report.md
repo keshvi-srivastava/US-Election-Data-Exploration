@@ -29,3 +29,6 @@ respectively. <br>
 For the column 'Citizen Voting-Age Population' we have 56.67 % of values equal to
 zero. With this large percentage of missing values we decide to drop the column/variable 
 as we do not believe that it adds much value to our dataset/
+
+#### 8. Compare Democratic counties and Republican counties in terms of age, gender, race and ethnicity, and education by computing descriptive statistics and creating plots to visualize the results. What conclusions do you make for each variable from the descriptive statistics and the plots?
+#### AGE
