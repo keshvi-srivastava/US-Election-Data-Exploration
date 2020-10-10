@@ -51,12 +51,14 @@ Given below is the new column created ("Party") by comparing the democratic and 
 
 ![](images/party_columns.png)
 
-There is an important observation here to note that there are no counties where the number of democratic and republican votes are the same. (This was tested by simply checking all counties where number of democratic votes was same as republican)
+*There is an important observation here to note that there are no counties where the number of democratic and republican votes are the same. (This was tested by simply checking all counties where number of democratic votes was same as republican)*
 
+```ruby
 count = merged_data[merged_data['Democratic Votes'] == merged_data['Republican Votes']]['County'].count()
 print ("Count: ", count)
 
 Count : 0
+```
 
 #### Task 6 : Compute the mean median household income for Democratic counties and Republican counties. Which one is higher? Perform a hypothesis test to determine whether this difference is statistically significant at the 𝜶 = 𝟎. 𝟎𝟓 significance level. What is the result of the test? What conclusion do you make from this result?
 
@@ -66,13 +68,15 @@ Mean Median Household Income for Republican counties:  48724.15085714286
 
 We can see that the Democratic mean is higher than the Republican mean by 5074.581450549449. We performed a two-sample t-test to confirm if the mean difference is statistically significant.
 
-T-Test:
+**T-Test**:
 
+```
 Null Hypothesis : Democratic Mean = Republican Mean
 Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean < Republican Mean
 t_value : 5.507
 p_value : 4.462662928084171e-08   => Calculated for two-tailed test (2*(1-p_value))
 alpha : 0.05
+```
 
 Since p_value < alpha, we can successfully reject our null hypothesis and claim that the difference in Mean Median Household Income is statistically significant.
 
@@ -84,13 +88,15 @@ Mean Total Population for Republican counties:  53974.214857142855
 
 We can see that the Democratic mean is higher than the Republican mean by 247024.10206593407. We performed a two-sample t-test to confirm if the mean difference is statistically significant.
 
-T-Test:
+**T-Test**:
 
+```
 Null Hypothesis : Democratic Mean = Republican Mean
 Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean < Republican Mean
 t_value : 8.001
 p_value : 2.886579864025407e-15   => Calculated for two-tailed test (2*(1-p_value))
 alpha : 0.05
+```
 
 Since p_value < alpha, we can successfully reject our null hypothesis and claim that the difference in Mean Population is statistically significant.
 
