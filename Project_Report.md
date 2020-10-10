@@ -9,7 +9,20 @@
 
 ## Tasks - 
 #### 1. Reshape dataset election_train from long format to wide format. Hint: the reshaped dataset should contain 1205 rows and 6 columns.
+The data was reshaped from long format to wide format. Earlier, two columns 'Party' and 'Votes'
+were changed to columns 'Democratic Votes' and 'Republican Votes'. This way we reduced the number of observations, and 
+got a single unique observation for each unique County and State combination in the data.
 #### 2. Merge reshaped dataset election_train with dataset demographics_train. Make sure that you address all inconsistencies in the names of the states and the counties before merging.
+Addressing Inconsistencies - 
+- In election data, we first removed the substring 'County' from the 'County' column. 
+- In election data, then we mapped the name of states from abbreviation to full names to match the State names in the demographic data.
+- After this we performed some common operations like - 'strip()' and 'upper'
+on 'State' and 'County' columns of both datasets to remove whitespaces and convert the strings
+  to Uppercase.
+  
+Merging Data - 
+We used an inner join on columns 'State' and 'County' to merge the two datasets.
+
 #### 3. Explore the merged dataset. How many variables does the dataset have? What is the type of these variables? Are there any irrelevant or redundant variables? If so, how will you deal with these variables?
 - The dataset has 19 variables. Following are the datatypes for each variable - 
 
@@ -24,11 +37,13 @@ for all observations which are '2018' and 'US Senator' respectively. Since these
   variables are constant for all the observations we will drop these columns from our dataset.
 
 #### 4. Search the merged dataset for missing values. Are there any missing values? If so, how will you deal with these values?
-There are 2 and 3 missing values for columns 'Republican Votes' and 'Democratic Votes' 
-respectively. <br>
+There are 2(0.17%) and 3(0.25%) missing values for columns 'Republican Votes' and 'Democratic Votes' 
+respectively. We decided to drop these observations as without these observations we can not 
+determine if the state is Democratic or Republic. Also they were a very small part of the total
+observations.<br>
 For the column 'Citizen Voting-Age Population' we have 56.67 % of values equal to
 zero. With this large percentage of missing values we decide to drop the column/variable 
-as we do not believe that it adds much value to our dataset/
+as we do not believe that it adds much value to our dataset.
 
 #### 8. Compare Democratic counties and Republican counties in terms of age, gender, race and ethnicity, and education by computing descriptive statistics and creating plots to visualize the results. What conclusions do you make for each variable from the descriptive statistics and the plots?
 Blue - 1- Democratic
