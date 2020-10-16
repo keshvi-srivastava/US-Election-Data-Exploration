@@ -1,7 +1,7 @@
 # US-Election-Data-Exploration
 
 <h3>TEAM MEMBERS<h3>
- <p> </p>
+ <h6> <h6>
   
 |Names                       |NetID            |UIN           |Role              |
 |---                         |---              |---           |---               |
