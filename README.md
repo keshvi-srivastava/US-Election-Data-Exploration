@@ -1,6 +1,7 @@
 # US-Election-Data-Exploration
 
 <h3>TEAM MEMBERS<h3>
+ <p> </p>
   
 |Names                       |NetID            |UIN           |Role              |
 |---                         |---              |---           |---               |
@@ -29,8 +30,8 @@
 * Completed the tasks 5 to 7
 
 <h3>INSTRUCTIONS<h3>
- 
- <p>
+ <h6> <h6>
+
  <b>Software</b> - Jupyter Notebook <br>
   
  <b>Libraries</b> - pandas, numpy, scipy, plotly, seaborn, warnings <br>
@@ -40,4 +41,4 @@
                   pip install shapely==1.6.3 <br>
   
   <b>Run</b> Jupyter Notebook
- </p>
+
