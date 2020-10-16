@@ -133,18 +133,18 @@ There are less percentage of voters who have not taken high shool degree .This c
 
 #### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labeled as Democratic or Republican? Justify your answer.
 We reject the null hypothesis for <b>mean median household income</b> <br>
-There is sufficient evidence to conclue that mean median household income may not be equal for both the party. <br>
+There is sufficient evidence to conclude that mean median household income may not be equal for both the party. <br>
 
 We reject the null hypothesis <b>mean population</b> <br>
-There is sufficient evidence to conclue that mean population may not be equal for both the party. <br>
+There is sufficient evidence to conclude that mean totoal population may not be equal for both the party. <br>
 
-Since, we have sufficient evidence to conclude that both the parties have differences, we can refer to the Age, Race, Ethnicity and education of the voters determine whether a county is labeled as Democratic or Republican. <br>
+We have sufficient evidence to conclude that both the parties have differences, however, for further analysis we can refer to the Age, Race, Ethnicity and education of the voters to determine whether a county is labeled as Democratic or Republican. <br>
 <b>Justification</b>
 - AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
 - GENDER: There is no significant inference with the polulation classified as female as male <br>
-- RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have there preference as Democratic<br>
+- RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have their preference as Democratic<br>
 - ETHNICITY: Here we can note that foreign born people have more than average voters for Democratic where compared to the non foreign born population <br>
-- EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic
+- EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic.
 
 
 #### 10. Create a map of Democratic counties and Republican counties using the counties’ FIPS codes and Python’s Plotly library (plot.ly/python/county-choropleth/). Note that this dataset does not include all United States counties
