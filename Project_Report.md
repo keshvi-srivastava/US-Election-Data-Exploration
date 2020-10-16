@@ -9,17 +9,16 @@
 
 ## Tasks - 
 #### 1. Reshape dataset election_train from long format to wide format. Hint: the reshaped dataset should contain 1205 rows and 6 columns.
-The data was reshaped from long format to wide format. Earlier, two columns 'Party' and 'Votes'
-were changed to columns 'Democratic Votes' and 'Republican Votes'. This way we reduced the number of observations, and 
-got a single unique observation for each unique County and State combination in the data.
+The data was reshaped from long format to wide format. Earlier, two columns 'Party' and 'Votes' were changed to columns 'Democratic Votes' and 'Republican Votes'. This way we reduced the number of observations, and  got a single unique observation for each unique County and State combination in the data.
+
 #### 2. Merge reshaped dataset election_train with dataset demographics_train. Make sure that you address all inconsistencies in the names of the states and the counties before merging.
 Addressing Inconsistencies - 
-- In election data, we first removed the substring 'County' from the 'County' column. 
+- In election data, we first removed the sub-string 'County' from the 'County' column. 
 - In election data, then we mapped the name of states from abbreviation to full names to match the State names in the demographic data.
-- After this we performed some common operations like - 'strip()' and 'upper'
-on 'State' and 'County' columns of both datasets to remove whitespaces and convert the strings
+- After this we performed some common operations like - 'strip()' and 'upper()'
+on 'State' and 'County' columns of both datasets to remove white-spaces and convert the strings
   to Uppercase.
-  
+
 Merging Data - 
 We used an inner join on columns 'State' and 'County' to merge the two datasets.
 
@@ -30,20 +29,15 @@ We used an inner join on columns 'State' and 'County' to merge the two datasets.
 
 - Further, the number of variables for each data types are as follows -
   
+
 ![](images/count_data_types.png)
 
-- There are two columns - 'Year' and 'Office' which have only a single value 
-for all observations which are '2018' and 'US Senator' respectively. Since these
-  variables are constant for all the observations we will drop these columns from our dataset.
+- There are two columns - 'Year' and 'Office' which have only a single value  for all observations which are '2018' and 'US Senator' respectively. Since these variables are constant for all the observations we will drop these columns from our dataset.
 
 #### 4. Search the merged dataset for missing values. Are there any missing values? If so, how will you deal with these values?
-There are 2(0.17%) and 3(0.25%) missing values for columns 'Republican Votes' and 'Democratic Votes' 
-respectively. We decided to drop these observations as without these observations we can not 
-determine if the state is Democratic or Republic. Also they were a very small part of the total
+There are 2(0.17%) and 3(0.25%) missing values for columns 'Republican Votes' and 'Democratic Votes'  respectively. We decided to drop these observations as without these observations we can not determine if the state is Democratic or Republic. Also they were a very small part of the total
 observations.<br>
-For the column 'Citizen Voting-Age Population' we have 56.67 % of values equal to
-zero. With this large percentage of missing values we decide to drop the column/variable 
-as we do not believe that it adds much value to our dataset.
+For the column 'Citizen Voting-Age Population' we have 56.67 % of values equal to zero. With this large percentage of missing values we decide to drop the column/variable as we do not believe that it adds much value to our dataset.
 
 #### 5. Create a new variable named “Party” that labels each county as Democratic or Republican. This new variable should be equal to 1 if there were more votes cast for the Democratic party than the Republican party in that county and it should be equal to 0 otherwise.
 
@@ -72,7 +66,7 @@ We can see that the Democratic mean is higher than the Republican mean by 5074.5
 
 ```
 Null Hypothesis : Democratic Mean = Republican Mean
-Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean < Republican Mean
+Alternative Hypothesis : Democratic Mean > Republican Mean or Democratic Mean  Republican Mean
 t_value : 5.507
 p_value : 4.462662928084171e-08   => Calculated for two-tailed test (2*(1-p_value))
 alpha : 0.05
@@ -111,13 +105,13 @@ Also we note that the age 65 and older people have voted more for Democratic
 ![](images/Age1.png)  ![](images/Age2.png) ![](images/Age3.png)
 
 #### GENDER
-The percentage of female and male voters are consistant,short boxes indicate that there is consistancy in the distribution of the data.
-There are outliers 1.5 times the interquartile range, lower quartile for female and upper quartile for male
+The percentage of female and male voters are consistent,short boxes indicate that there is consistency in the distribution of the data.
+There are outliers 1.5 times the inter-quartile range, lower quartile for female and upper quartile for male
 
 ![](images/Gender1.png)  ![](images/Gender2.png)
 
 #### RACE
-The percentage of white, not hispanic or Latino are majority of voters, also there is likely difference between the two party voters.
+The percentage of white, not Hispanic or Latino are majority of voters, also there is likely difference between the two party voters.
 
 ![](images/Race1.png)  ![](images/Race2.png) ![](images/Race3.png)
 
@@ -127,22 +121,23 @@ The percentage of foreign born have more voting for Republic where as the percen
 ![](images/Ethnicity1.png)  ![](images/Ethnicity2.png) 
 
 #### EDUCATION
-There are less percentage of voters who have not taken high shool degree .This can also infer that the voters are educated with minimun of batchelors degree.
+There are less percentage of voters who have not taken high school degree .This can also infer that the voters are educated with minimum of a bachelors degree.
 
 ![](images/Education1.png)  ![](images/Education2.png) 
 
-#### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labeled as Democratic or Republican? Justify your answer.
+#### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labelled as Democratic or Republican? Justify your answer.
 We reject the null hypothesis for <b>mean median household income</b> <br>
 There is sufficient evidence to conclude that mean median household income may not be equal for both the party. <br>
 
 We reject the null hypothesis <b>mean population</b> <br>
-There is sufficient evidence to conclude that mean totoal population may not be equal for both the party. <br>
+There is sufficient evidence to conclude that mean total population may not be equal for both the party. <br>
 
-We have sufficient evidence to conclude that both the parties have differences in two of the many attributes (mean median household icome and mean total population), however, for further analysis we can refer to the Age, Race, Ethnicity and education of the voters to determine whether a county is labeled as Democratic or Republican. <br>
+We have sufficient evidence to conclude that both the parties have differences in two of the many attributes (mean median household icome and mean total population), however, for further analysis we can refer to the Age, Race, Ethnicity and education of the voters to determine whether a county is labelled as Democratic or Republican. <br>
 <b>Justification</b>
-- AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
-- GENDER: There is no significant inference with the polulation classified as female as male <br>
-- RACE: The majority voters (white, not hispanic or Latino) have voting for Republic where as the minority have their preference as Democratic<br>
+
+- AGE: The population with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
+- GENDER: There is no significant inference with the population classified as female as male <br>
+- RACE: The majority voters (white, not Hispanic or Latino) have voting for Republic where as the minority have their preference as Democratic<br>
 - ETHNICITY: Here we can note that foreign born people have more than average voters for Democratic where compared to the non foreign born population <br>
 - EDUCATION: Here we can make conclusion on just the population without bachelors degree. Both the population with less than high school degree and bachelors degree have more support for Democratic.
 

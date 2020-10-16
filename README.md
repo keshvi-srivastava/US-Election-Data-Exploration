@@ -34,11 +34,14 @@
 
  <b>Software</b> - Jupyter Notebook <br>
   
- <b>Libraries</b> - pandas, numpy, scipy, plotly, seaborn, warnings <br>
+ <b>Libraries</b> - pandas, numpy, scipy, plotly, seaborn <br>
  
- <b>Installation</b> -   pip install geopandas==0.3.0 <br>
-                  pip install pyshp==1.2.10 <br>
-                  pip install shapely==1.6.3 <br>
+ <b>Installation</b> -   
+    
+    pip install pandas==1.0.5 
+    pip install geopandas==0.3.0
+    pip install pyshp==1.2.10
+    pip install shapely==1.6.3
   
-  <b>Run</b> Jupyter Notebook
+  <b>Run</b> - `jupyter notebook`
 
