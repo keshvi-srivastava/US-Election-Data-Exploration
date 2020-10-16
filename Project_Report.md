@@ -133,14 +133,12 @@ There are less percentage of voters who have not taken high shool degree .This c
 
 #### 9. Based on your results for tasks 6-8, which variables in the dataset do you think are more important to determine whether a county is labeled as Democratic or Republican? Justify your answer.
 We reject the null hypothesis for <b>mean median household income</b> <br>
-There no is sufficient evidence to conclude that mean median household income of Democratic counties is higher or Republican counties.
-But there is sufficient evidence to conclue that mean median household income may not be equal for both the party. <br>
+There is sufficient evidence to conclue that mean median household income may not be equal for both the party. <br>
 
 We reject the null hypothesis <b>mean population</b> <br>
-There no is sufficient evidence to conclude that mean population of Democratic counties is higher or Republican counties.
-But there is sufficient evidence to conclue that mean population may not be equal for both the party. <br>
+There is sufficient evidence to conclue that mean population may not be equal for both the party. <br>
 
-Since, we do not have sufficient evidence from the testing, we can refer to the Age, Race, Ethnicity and education of the voters determine whether a county is labeled as Democratic or Republican. <br>
+Since, we have sufficient evidence to conclude that both the parties have differences, we can refer to the Age, Race, Ethnicity and education of the voters determine whether a county is labeled as Democratic or Republican. <br>
 <b>Justification</b>
 - AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
 - GENDER: There is no significant inference with the polulation classified as female as male <br>
