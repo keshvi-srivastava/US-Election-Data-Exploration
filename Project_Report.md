@@ -138,7 +138,7 @@ There is sufficient evidence to conclude that mean median household income may n
 We reject the null hypothesis <b>mean population</b> <br>
 There is sufficient evidence to conclude that mean totoal population may not be equal for both the party. <br>
 
-We have sufficient evidence to conclude that both the parties have differences, however, for further analysis we can refer to the Age, Race, Ethnicity and education of the voters to determine whether a county is labeled as Democratic or Republican. <br>
+We have sufficient evidence to conclude that both the parties have differences in two of the many attributes (mean median household icome and mean total population), however, for further analysis we can refer to the Age, Race, Ethnicity and education of the voters to determine whether a county is labeled as Democratic or Republican. <br>
 <b>Justification</b>
 - AGE: The polulation with age 65 and older are supporters of Democratic, where as the rest of the lower age group people have moslty votes for Republic <br>
 - GENDER: There is no significant inference with the polulation classified as female as male <br>
